@@ -103,7 +103,8 @@ label {
     position: relative;
     cursor: pointer;
     margin: 1em;
-    background-color: var(--highlight);
+    background-color: #3E64FF;
+    background: radial-gradient(100% 325% at 100% 25%, #3E64FF 0%, #B2FCFF 100%);    
 }
 
 label::after {

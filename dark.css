@@ -97,7 +97,7 @@ button {
     width: 0;
     visibility: hidden;
     margin-left: auto;
-    background-color: var(--highlight); 
+    /* background-color: var(--highlight);  */
 }
 
 label {
@@ -107,7 +107,8 @@ label {
     position: relative;
     cursor: pointer;
     margin: 1em;
-    background-color: var(--highlight);
+    /* background-color: #07456F; */
+    background: radial-gradient(100% 425% at 100% 0%, #073846 0%, #00C2FF 100%);
 }
 
 label::after {
@@ -124,7 +125,7 @@ label::after {
 
 .toggle:checked + label::after {
     transform: translate(-18px);
-    background-color: rgb(20, 20, 20);
+    background-color: #00566e;
 }
 
 .dark,
