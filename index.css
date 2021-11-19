@@ -3,8 +3,8 @@
 }
 
 :root {
-    --light: whitesmoke;
-    --dark: #080808;
+    --light: rgba(247, 247, 247, 0.377);
+    --dark: rgb(20, 20, 20);
     --highlight: #d68fd6;
     --highlight: #006989;
 }
@@ -19,11 +19,11 @@ body {
     /* background: linear-gradient(125deg, #ECFCFF 0%, #ECFCFF 40%, #B2FCFF calc(40% + 1px), #B2FCFF 60%, #5EDFFF calc(60% + 1px), #5EDFFF 72%, #3E64FF calc(72% + 1px), #3E64FF 100%); */
     background: url("./img/lightmode.jpg");
     background-size: cover;
-    transition: background 0.4s ease-in-out;
+    transition: background-image 0.4s ease-in-out;
 }
 
 .header {
-    background-color: var(--light);
+    background-color: #f7f7f7;
     padding: 2em;
     width: 100%;
     display: flex;
@@ -36,13 +36,16 @@ body {
 .post,
 button,
 img {
-    -webkit-box-shadow: 2px 2px 4px 0px var(--dark); 
-    box-shadow: 2px 2px 4px 0px var(--dark);
+    -webkit-box-shadow: 2px 2px 15px var(--dark); 
+    box-shadow: 2px 2px 15px var(--dark);
     border-radius: 5px;
+    transition: box-shadow 0.4s ease-in-out;
 }
 
 .post {
     background: var(--light);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(20px);
     padding: 1em;
     display: grid;
     grid-template-columns: 1fr minmax(50px, 250px);
@@ -64,7 +67,7 @@ img {
 }
 
 h1 {
-    color: var(--dark);
+    color: #006989;
     margin: 0;
     font-size: 3rem;
 }
@@ -81,8 +84,8 @@ button {
     padding: 1em 2em;
     font-weight: 700;
     justify-self: start;
-    background-color: var(--dark);
-    color: var(--light)
+    background-color: #f7f7f7;
+    color: #006989;
 }
 
 .toggle {
