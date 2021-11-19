@@ -7,10 +7,10 @@ Live Deployment: https://alanacapcreates-wwdc-themechanger.netlify.app/
 - H1 🔜
 - Card Background ✔️
 - Card Text Color ✔️
-- Button Background 🔜
-- Button Text Color 🔜
+- Button Background ✔️
+- Button Text Color ✔️
 - Toggle ✔️
 
 ### Stretch Goals:
-- Add a transition so the theme changes smoothly 🔜
+- Add a transition so the theme changes smoothly ✔️
 - Add your own theme ✔️
