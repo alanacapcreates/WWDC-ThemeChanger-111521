@@ -23,7 +23,9 @@ body {
 }
 
 .header {
-    background-color: #f7f7f7;
+    background: var(--light);
+    backdrop-filter: blur(35px);
+    -webkit-backdrop-filter: blur(35px);
     padding: 2em;
     width: 100%;
     display: flex;
@@ -67,7 +69,7 @@ img {
 }
 
 h1 {
-    color: #006989;
+    color: #073846;
     margin: 0;
     font-size: 3rem;
 }
