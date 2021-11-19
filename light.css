@@ -3,11 +3,10 @@
 }
 
 :root {
-    --light: #f7f7f7;
-    --dark: rgba(20, 20, 20, 0.397);
+    --light: rgba(247, 247, 247, 0.377);
+    --dark: rgb(20, 20, 20);
     --highlight: #d68fd6;
     --highlight: #006989;
-    --ACCMain: #00F6EE;
 }
 
 html, body {
@@ -17,37 +16,32 @@ html, body {
 
 body {
     font-family: 'Kulim Park', sans-serif;
-
-    /* background: radial-gradient(100% 225% at 100% 0%, #FF0000 0%, #000000 100%), linear-gradient(236deg, #00C2FF 0%, #000000 100%), linear-gradient(135deg, #CDFFEB 0%, #CDFFEB 36%, #009F9D 36%, #009F9D 60%, #07456F 60%, #07456F 67%, #0F0A3C 67%, #0F0A3C 100%); */
-    /* background-blend-mode: overlay, hard-light, normal; */
-    background: url("./img/darkmode.jpg");
+    /* background: linear-gradient(125deg, #ECFCFF 0%, #ECFCFF 40%, #B2FCFF calc(40% + 1px), #B2FCFF 60%, #5EDFFF calc(60% + 1px), #5EDFFF 72%, #3E64FF calc(72% + 1px), #3E64FF 100%); */
+    background: url("./img/lightmode.jpg");
     background-size: cover;
     transition: background-image 0.4s ease-in-out;
-
 }
 
 .header {
-    background: var(--dark);
+    background: var(--light);
     backdrop-filter: blur(35px);
     -webkit-backdrop-filter: blur(35px);
     padding: 2em;
     width: 100%;
     display: flex;
-    box-shadow: 0px 2px 45px var(--light);
-
+    box-shadow: 0px 2px 45px var(--dark);
 }
 
 .post-container {
     padding: 1em 2em;
 }
-
 button{
-    -webkit-box-shadow: 2px 3px 15px #00F6EE, -2px -3px 15px #3E64FF; 
-    box-shadow: 2px 3px 15px #00F6EE, -2px -3px 15px #3E64FF;
+    -webkit-box-shadow: 2px 3px 15px #3E64FF, -2px -3px 15px #00F6EE; 
+    box-shadow: 2px 3px 15px #3E64FF, -2px -3px 15px #00F6EE;
 }
 img{
-    -webkit-box-shadow: 2px 3px 15px #00F6EE, -2px -3px 15px #3E64FF; 
-    box-shadow: 2px 3px 15px #00F6EE, -2px -3px 15px #3E64FF;
+    -webkit-box-shadow: 2px 3px 15px #3E64FF, -2px -3px 15px #00F6EE; 
+    box-shadow: 2px 3px 15px #3E64FF, -2px -3px 15px #00F6EE;
 }
 .post,
 button,
@@ -57,18 +51,17 @@ img {
 }
 
 .post {
-    background: var(--dark);
+    background: var(--light);
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(20px);
-    -webkit-box-shadow: 2px 3px 15px rgba(255, 255, 255, 0.459);
-    box-shadow: 2px 3px 7px rgba(255, 255, 255, 0.459);
+    box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.459);
     padding: 1em;
     display: grid;
     grid-template-columns: 1fr minmax(50px, 250px);
     min-width: 400px;
     max-width: 700px;
     margin: 2em auto;
-    color: #f7f7f7;
+    color: var(--dark)
 }
 
 .content {
@@ -83,7 +76,7 @@ img {
 }
 
 h1 {
-    color: #00C2FF;
+    color: #073846;
     margin: 0;
     font-size: 3rem;
 }
@@ -100,8 +93,8 @@ button {
     padding: 1em 2em;
     font-weight: 700;
     justify-self: start;
-    background-color: rgb(20, 20, 20);
-    color: #f7f7f7;
+    background-color: #f7f7f7;
+    color: #006989;
 }
 
 .toggle {
@@ -109,7 +102,7 @@ button {
     width: 0;
     visibility: hidden;
     margin-left: auto;
-    /* background-color: var(--highlight);  */
+    background-color: var(--highlight); 
 }
 
 label {
@@ -119,8 +112,8 @@ label {
     position: relative;
     cursor: pointer;
     margin: 1em;
-    /* background-color: #07456F; */
-    background: radial-gradient(100% 425% at 100% 0%, #073846 0%, #00C2FF 100%);
+    background-color: #3E64FF;
+    background: radial-gradient(100% 325% at 100% 25%, #3E64FF 0%, #B2FCFF 100%);    
 }
 
 label::after {
@@ -137,7 +130,7 @@ label::after {
 
 .toggle:checked + label::after {
     transform: translate(-18px);
-    background-color: #00566e;
+    background-color: rgb(20, 20, 20);
 }
 
 .dark,
