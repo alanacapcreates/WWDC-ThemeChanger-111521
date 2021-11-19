@@ -9,10 +9,10 @@ function toggleTheme() {
             
             let currentTheme = document.getElementById('styleeee');
             if(toggleBtn.checked == true){
-                currentTheme.setAttribute('href', "dark.css");
+                currentTheme.setAttribute('href', "../styles/dark.css");
             }
             else{
-                currentTheme.setAttribute('href', "light.css");
+                currentTheme.setAttribute('href', "../styles/light.css");
             }
             
         
