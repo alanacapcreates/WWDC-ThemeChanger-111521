@@ -12,7 +12,7 @@ function toggleTheme() {
                 currentTheme.setAttribute('href', "dark.css");
             }
             else{
-                currentTheme.setAttribute('href', "index.css");
+                currentTheme.setAttribute('href', "light.css");
             }
             
         
