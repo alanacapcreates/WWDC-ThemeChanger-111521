@@ -3,8 +3,8 @@ Live Deployment: https://alanacapcreates-wwdc-themechanger.netlify.app/
 
 ## 📅 Deadline: Monday November 22, 2021
 ### Things to Switch:
-- Header 🔜
-- H1 🔜
+- Header ✔️
+- H1 ✔️
 - Card Background ✔️
 - Card Text Color ✔️
 - Button Background ✔️
