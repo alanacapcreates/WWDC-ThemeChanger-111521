@@ -26,6 +26,7 @@ body {
     padding: 2em;
     width: 100%;
     display: flex;
+    
 }
 
 .post-container {
@@ -52,7 +53,7 @@ img {
 }
 
 img {
-    background-size: cover;
+    background-size: contain;
     max-width: 100%;
     height: 100%;
     }

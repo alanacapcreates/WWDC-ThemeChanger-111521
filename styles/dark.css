@@ -5,15 +5,13 @@ body {
 .header {
     background: var(--dark);
     box-shadow: 0px 2px 45px var(--light);
+    transition: all 0.4s ease-in-out;
 }
 
-button{
-    -webkit-box-shadow: 2px 3px 15px #00F6EE, -2px -3px 15px #3E64FF; 
-    box-shadow: 2px 3px 15px #00F6EE, -2px -3px 15px #3E64FF;
-}
 img{
     -webkit-box-shadow: 2px 3px 15px #00F6EE, -2px -3px 15px #3E64FF; 
     box-shadow: 2px 3px 15px #00F6EE, -2px -3px 15px #3E64FF;
+    transition: all 0.4s ease-in-out;
 }
 
 .post {
@@ -21,15 +19,20 @@ img{
     -webkit-box-shadow: 2px 3px 15px rgba(255, 255, 255, 0.459);
     box-shadow: 2px 3px 7px rgba(255, 255, 255, 0.459);
     color: #f7f7f7;
+    transition: all 0.4s ease-in-out;
 }
 
 h1 {
     color: #00C2FF;
+    transition: all 0.4s ease-in-out;
 }
 
 button {
     background-color: rgb(20, 20, 20);
     color: #f7f7f7;
+    -webkit-box-shadow: 2px 3px 15px #00F6EE, -2px -3px 15px #3E64FF; 
+    box-shadow: 2px 3px 15px #00F6EE, -2px -3px 15px #3E64FF;
+    transition: all 0.4s ease-in-out;
 }
 
 label {
