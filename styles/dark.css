@@ -3,7 +3,7 @@ body {
 }
 
 .header {
-    background: var(--dark);
+    background: rgba(20,20,20,.377);
     box-shadow: 0px 2px 45px var(--light);
     transition: all 0.4s ease-in-out;
 }
