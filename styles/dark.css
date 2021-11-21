@@ -15,7 +15,7 @@ img{
 }
 
 .post {
-    background: var(--dark);
+    background: rgba(20,20,20,.377);
     -webkit-box-shadow: 2px 3px 15px rgba(255, 255, 255, 0.459);
     box-shadow: 2px 3px 7px rgba(255, 255, 255, 0.459);
     color: #f7f7f7;
